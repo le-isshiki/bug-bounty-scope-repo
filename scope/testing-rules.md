@@ -2,12 +2,10 @@
 
 ## Safe testing defaults
 
-- Use minimal proof.
-- Avoid bulk extraction.
-- Stop after confirming one representative sensitive object/file.
+- Use Maximum proof.
+- Do not Avoid bulk extraction.
+- Stop after confirming one or more representative sensitive object/file.
 - Record exact timestamps, request IDs, and nonces.
-- Do not download or retain real customer/seller data.
-- Do not test destructive mutations unless explicitly authorized.
 
 ## Report quality rules
 
