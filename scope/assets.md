@@ -2,11 +2,24 @@
 
 ## Current extracted target
 
-- `marketplace.tw.coupangcorp.com`
-  - Type: Domain
-  - Coverage: Critical eligible according to the uploaded report text
-  - Primary technology: Salesforce Experience Cloud / Aura / Shepherd file servlet
-  - Current finding theme: unauthenticated Salesforce Site Guest User object/file exposure
+# targets/coupang_salesforce.py
+
+TARGET = {
+    "host": "marketplace.tw.coupangcorp.com",
+    "platform": "salesforce",
+    "guest_access": True,
+    "attack_surface": [
+        "Aura",
+        "ContentDocument",
+        "Shepherd",
+        "RecordUiController"
+    ],
+    "known_vectors": [
+        "Guest User Misconfiguration",
+        "Aura Enumeration",
+        "ContentDocument Exposure"
+    ]
+}
 
 ## Add full program scope here
 
