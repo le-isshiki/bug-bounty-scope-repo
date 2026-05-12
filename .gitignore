@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+evidence/private/
+cookies.txt
+session*.json
